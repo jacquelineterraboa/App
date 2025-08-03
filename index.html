@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Da Roça Para Você</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="imagem" href="imagem/image.png">
+  <link rel="icon" href="icon-192x192.png" type="image/png">
+<link rel="apple-touch-icon" href="icon-192x192.png">
+<meta name="theme-color" content="#3f804d">
+<meta name="theme-color" content="#63ac6b">
+
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo ao nosso App.</h1>
+    
+    <p>Compre produtos frescos direto do campo, com praticidade e qualidade.</p>
+  </header>
+
+  <main>
+    <img src="imagem/image.png" alt="Logo da Roça" class="logo" />
+    
+  </main>
+
+  <footer class="footer-nav">
+    <a href="index.html" class="nav-btn">Início</a>
+    <a href="beneficios.html" class="nav-btn">Benefícios</a>
+    <a href="escolher-itens.html" class="nav-btn">Cesta</a>
+    <a href="escolher-cadastro.html" class="nav-btn">Cadastro</a>
+  </footer>
+
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(function(registration) {
+        console.log('Service Worker registrado com sucesso:', registration.scope);
+      })
+      .catch(function(error) {
+        console.log('Falha ao registrar o Service Worker:', error);
+      });
+  }
+</script>
+
+</body>
+</html>
