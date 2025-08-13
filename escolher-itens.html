@@ -11,7 +11,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #D3d3d3;
+      background-color: rgb(169, 172, 169);
       margin: 0;
       padding: 0;
       display: flex;
@@ -42,8 +42,8 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
     main {
-  padding-bottom: 80px; /* espaço extra para o rodapé fixo */
-}
+  padding-bottom: 80px; 
+     }
 
     h2 {
       text-align: center;
@@ -52,7 +52,7 @@
 
     .itens-container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 10px;
       margin-bottom: 20px;
     }
@@ -239,11 +239,11 @@
     }
 
     const mensagem = `Olá! Gostaria de montar a seguinte cesta:\n\n${selecionados.join('\n')}`;
-    const numero = "5541991440629"; // número com DDI
+    const numero = "5541991440629"; 
 
     alert("Sua cesta foi montada! Você será redirecionado para o WhatsApp.");
 
-    // Redirecionamento para WhatsApp
+    
     const url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem);
     window.open(url, "_blank");
   }
